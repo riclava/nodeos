@@ -1,0 +1,16 @@
+[Unit]
+Description=EOS nodeos service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/eos/nodeos/start.sh
+ExecStop=/usr/local/eos/nodeos/stop.sh
+TimeoutStartSec=30s
+TimeoutStopSec=300s
+Restart=no
+User=eosio
+Group=eosio
+KillMode=control-group
+
+[Install]
+WantedBy=multi-user.target
