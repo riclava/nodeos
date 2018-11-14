@@ -9,7 +9,7 @@ ulimit -s 64000
 
 mkdir -p $NODEOS_DATA_DIR
 
-FIRST_START_ARGS="--delete-all-blocks --genesis-json genesis.json"
+FIRST_START_ARGS="--delete-all-blocks --genesis-json "${NODEOS_DATA_DIR}"/genesis.json"
 
 if [ -f $NODEOS_DATA_DIR"/"$FIRST_MARK_FILE ]; then
     # already init
