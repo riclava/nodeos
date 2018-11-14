@@ -38,11 +38,15 @@ git submodule update --init --recursive
 + replace p2p-peer-address list with fresh generated on monitor site: [eosnodes.privex.io](https://eosnodes.privex.io/?config=1)
 + open firewall for all ports []
 
-## alias
+## init and start
 
-```bash
++ start wallet by `systemctl start nodeos-wallet`
++ start nodeos by `systemctl start nodeos`
 
-```
+## enable auto start
+
++ `systemctl enable nodeos-wallet`
++ `systemctl enable nodeos`
 
 ## ref
 

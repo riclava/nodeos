@@ -21,5 +21,6 @@ fi
 
 nodeos --data-dir $NODEOS_DATA_DIR \
        --config-dir $NODEOS_DATA_DIR \
+       $FIRST_START_ARGS \
        "$@" > $NODEOS_DATA_DIR/stdout.log \
        2> $NODEOS_DATA_DIR/stderr.log
