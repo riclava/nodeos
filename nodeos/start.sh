@@ -1,7 +1,6 @@
 #!/bin/bash
 
 NODEOS_DATA_DIR="/opt/nodeos"
-PID_FILE="nodeos.pid"
 FIRST_MARK_FILE="first.mark"
 
 ulimit -c unlimited
@@ -23,5 +22,4 @@ fi
 nodeos --data-dir $NODEOS_DATA_DIR \
        --config-dir $NODEOS_DATA_DIR \
        "$@" > $NODEOS_DATA_DIR/stdout.log \
-       2> $NODEOS_DATA_DIR/stderr.log & \
-       echo $! > $NODEOS_DATA_DIR/$PID_FILE
+       2> $NODEOS_DATA_DIR/stderr.log
