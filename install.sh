@@ -6,9 +6,6 @@ NODEOS_DATA_DIR="/opt/nodeos"
 mkdir -p ${EOS_BASE_DIR}
 mkdir -p ${NODEOS_DATA_DIR}
 
-# user
-useradd eosio
-
 # exec
 cd `dirname $0`
 cp -rf wallet ${EOS_BASE_DIR}

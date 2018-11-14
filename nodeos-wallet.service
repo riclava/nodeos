@@ -8,8 +8,6 @@ ExecStop=/usr/local/eos/wallet/stop.sh
 TimeoutStartSec=30s
 TimeoutStopSec=300s
 Restart=no
-User=eosio
-Group=eosio
 KillMode=control-group
 
 [Install]
